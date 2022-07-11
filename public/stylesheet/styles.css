@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 62.5%; }
+
+.navigation {
+  font-size: 1.4rem; }
+  .navigation-item:not(:first-child) {
+    margin-left: 0.5rem; }
