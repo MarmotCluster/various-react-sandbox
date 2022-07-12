@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 
-const expensiveCalculation = (num: number) => {
+const expensiveCalculation = (num: number): number => {
   console.log("Calculating...");
   for (let i = 0; i < 1000000000; i++) {
     num += 1;
@@ -9,7 +9,7 @@ const expensiveCalculation = (num: number) => {
 };
 
 const PageUseMemo = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
   const [todos, setTodos] = useState<string[]>([]);
   const calculation = useMemo(() => expensiveCalculation(count), [count]);
 
