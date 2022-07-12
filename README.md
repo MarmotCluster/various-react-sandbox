@@ -1,3 +1,4 @@
 Built with Typescript <br>
 Has `/main` `/usememo` inside. <br>
-useMemo tested first.
+useMemo tested first.<br>
+added toggle which directly focus on input in `?`
