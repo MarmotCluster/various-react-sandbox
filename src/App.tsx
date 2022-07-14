@@ -4,6 +4,7 @@ import Main from "./components/pages/Main";
 import Navigation from "./components/Navigation";
 import PageUseMemo from "./components/pages/PageUseMemo";
 import OnKeydownFocus from "./components/pages/OnKeydownFocus";
+import PageUseCallback from "./components/pages/PageUseCallback";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<Main />} />
         <Route path="/usememo" element={<PageUseMemo />} />
         <Route path="/focus" element={<OnKeydownFocus />} />
+        <Route path="/usecallback" element={<PageUseCallback />} />
       </Routes>
     </BrowserRouter>
   );

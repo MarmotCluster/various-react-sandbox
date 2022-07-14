@@ -20,6 +20,11 @@ const Navigation = () => {
       name: "inputFocus",
       to: "/focus",
     },
+
+    {
+      name: "useCnM",
+      to: "/usecallback",
+    },
   ];
 
   return (
