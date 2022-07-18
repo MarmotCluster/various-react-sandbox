@@ -20,3 +20,37 @@ body {
     }
   }
 }
+
+.image-slide {
+  font-size: 0;
+  max-width: 80vw;
+  // background-color: red;
+  overflow-x: scroll;
+  white-space: nowrap;
+  // height: 9rem;
+  scroll-margin-inline-start: 2em;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: rgba($color: #333, $alpha: 0.2);
+  }
+
+  &-item {
+    width: 16rem;
+    height: 9rem;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 5px;
+    pointer-events: none;
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+}

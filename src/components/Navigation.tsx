@@ -20,10 +20,13 @@ const Navigation = () => {
       name: "inputFocus",
       to: "/focus",
     },
-
     {
       name: "useCnM",
       to: "/usecallback",
+    },
+    {
+      name: "imageSlide",
+      to: "/imageslide",
     },
   ];
 
