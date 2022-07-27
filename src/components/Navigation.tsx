@@ -28,6 +28,10 @@ const Navigation = () => {
       name: "imageSlide",
       to: "/imageslide",
     },
+    {
+      name: "SVGopoy",
+      to: "/opoy",
+    },
   ];
 
   return (

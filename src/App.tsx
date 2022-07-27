@@ -6,6 +6,7 @@ import PageUseMemo from "./components/pages/PageUseMemo";
 import OnKeydownFocus from "./components/pages/OnKeydownFocus";
 import PageUseCallback from "./components/pages/PageUseCallback";
 import PageImageSlide from "./components/pages/PageImageSlide";
+import SVGopoy from "./components/SVGopoy";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/focus" element={<OnKeydownFocus />} />
         <Route path="/usecallback" element={<PageUseCallback />} />
         <Route path="/imageslide" element={<PageImageSlide />} />
+        <Route path="/opoy" element={<SVGopoy />} />
       </Routes>
     </BrowserRouter>
   );

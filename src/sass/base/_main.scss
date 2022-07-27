@@ -54,3 +54,11 @@ body {
     }
   }
 }
+
+#사각형_1 {
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: rotate(10deg);
+  }
+}
