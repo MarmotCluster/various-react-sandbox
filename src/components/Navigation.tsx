@@ -32,6 +32,10 @@ const Navigation = () => {
       name: "SVGopoy",
       to: "/opoy",
     },
+    {
+      name: "DirectMemo",
+      to: "/direct",
+    },
   ];
 
   return (

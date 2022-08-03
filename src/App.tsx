@@ -7,6 +7,7 @@ import OnKeydownFocus from "./components/pages/OnKeydownFocus";
 import PageUseCallback from "./components/pages/PageUseCallback";
 import PageImageSlide from "./components/pages/PageImageSlide";
 import SVGopoy from "./components/SVGopoy";
+import DirectMemo from "./components/pages/DirectMemo";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/usecallback" element={<PageUseCallback />} />
         <Route path="/imageslide" element={<PageImageSlide />} />
         <Route path="/opoy" element={<SVGopoy />} />
+        <Route path="/direct" element={<DirectMemo />} />
       </Routes>
     </BrowserRouter>
   );
