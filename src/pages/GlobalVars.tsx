@@ -1,15 +1,8 @@
-import { useEffect } from "react";
-import {
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilStateLoadable,
-  useRecoilValue,
-  useRecoilValueLoadable,
-  useResetRecoilState,
-} from "recoil";
+import { atom, useRecoilState } from "recoil";
+import { List } from "../types/ListTypes";
+import { listParam } from "../store/listStores";
 import axios from "axios";
-import useFetch, { List, listParam } from "../store/useFetch";
+import useFetch from "../hooks/useFetch";
 
 const getData = (id: number): Promise<Response> =>
   axios.get(`https://jsonplaceholder.typicode.com/todos/`, {
