@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -13,3 +14,31 @@ body {
   font-size: 1.4rem; }
   .navigation-item:not(:first-child) {
     margin-left: 0.5rem; }
+
+.image-slide {
+  font-size: 0;
+  max-width: 80vw;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-margin-inline-start: 2em; }
+  .image-slide::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    background-color: transparent; }
+  .image-slide::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background-color: rgba(51, 51, 51, 0.2); }
+  .image-slide-item {
+    width: 16rem;
+    height: 9rem;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 5px;
+    pointer-events: none; }
+    .image-slide-item:not(:first-child) {
+      margin-left: 1rem; }
+
+#사각형_1 {
+  transition: all 0.2s ease; }
+  #사각형_1:hover {
+    transform: rotate(10deg); }
